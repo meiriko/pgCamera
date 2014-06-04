@@ -58,7 +58,7 @@ var fd = new FormData();
 fd.append('video-meir.mp4','meir.mp4');
 //fd.append('video-meir1.mp4',
 alert('p2');
-xhr.open('POST', "http://192.168.2.106:3000/upload", true);
+xhr.open('POST', "http://192.168.2.106:8080/upload", true);
 alert('p3');
 /*
 		var ft = new FileTransfer();
