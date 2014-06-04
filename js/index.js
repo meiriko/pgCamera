@@ -24,7 +24,7 @@ var app = {
 
 	uploadFile: function(fileURL){
 		console.log('and logging too');
-		alert('uploading');
+		alert('uploading: ' + fileURL);
 		// !! Assumes variable fileURL contains a valid URL to a text file on the device,
 		//    for example, cdvfile://localhost/persistent/path/to/file.txt
 
@@ -160,13 +160,6 @@ alert(Object.keys(mediaFiles[i]));
 
 			document.querySelector("#accel").addEventListener('click', function(event){
 				// navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
-alert('pre');
-alert(FileTransferError);
-alert('pre1');
-alert(new FileTransferError());
-alert('pre3');
-				var x = new FileTransfer();
-alert('pos1t');
 			});
 			// window.addEventListener("batterystatus", onBatteryStatus, false);
 			app.initCapture();
