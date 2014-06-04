@@ -23,6 +23,7 @@ var app = {
     },
 
 	uploadFile: function(fileURL){
+		console.log('and logging too');
 		alert('uploading');
 		// !! Assumes variable fileURL contains a valid URL to a text file on the device,
 		//    for example, cdvfile://localhost/persistent/path/to/file.txt
@@ -49,7 +50,6 @@ var app = {
 		params.value2 = "param";
 
 		options.params = params;
-var x = new FileTransfer();
 
 alert('ready?');
 /*
