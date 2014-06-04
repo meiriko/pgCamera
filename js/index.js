@@ -41,8 +41,8 @@ var app = {
 		}
 
 		var options = new FileUploadOptions();
-		// options.fileKey = "file";
-		// options.fileName = fileURL.substr(fileURL.lastIndexOf('/') + 1);
+		options.fileKey = "file";
+		options.fileName = 'meir.mp4';// fileURL.substr(fileURL.lastIndexOf('/') + 1);
 		options.mimeType = "video/mp4";
 
 		var params = {};
@@ -64,6 +64,7 @@ alert('p3');
 */
 		var ft = new FileTransfer();
 alert('ssssteady?');
+alert(options.fileName);
 		ft.upload(fileURL, encodeURI("http://192.168.2.106:8080/upload"), win, fail, options);
 alert('go?');
 	},
