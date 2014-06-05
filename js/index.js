@@ -16,6 +16,9 @@
  * specific language governing permissions and limitations
  * under the License.
  */
+function handleOpenURL(url) {
+	alert("received url: " + url);
+}
 var app = {
     // Application Constructor
     initialize: function() {
