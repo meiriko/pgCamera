@@ -149,6 +149,17 @@ alert(Object.keys(mediaFiles[i]));
 			}, false );
 		}
 		createEventHandler('deviceready',function(event){
+
+alert('pre add intent');
+	window.webintent.getUri(function(url) {
+alert('intent 1');
+		if(url !== "") {
+			// url is the url the intent was launched with
+alert('intent 2');
+			// document.querySelector("#test").innerHTML = "URL was "+url;
+		}
+	});
+alert('intent added');
 			window.addEventListener("batterystatus", function(e){ alert('but stat: ' + e.level);}, true);
 			function onSuccess(acceleration) {
 				alert('Acceleration X: ' + acceleration.x + '\n' +

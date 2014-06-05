@@ -31,6 +31,28 @@
     -->
     <preference name="permissions"                value="none"/>
 
+	<gap:config-file platform="android" parent="/manifest/application">
+        <activity android:name="SendIntent">
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+		</activity>
+        <activity android:name="IntentTest">
+			<!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+			-->
+			<intent-filter>
+				<action android:name="android.intent.action.VIEW"></action>
+				<category android:name="android.intent.category.DEFAULT"></category>
+				<category android:name="android.intent.category.BROWSABLE"></category>
+				<data android:host="m.youtube.com" android:scheme="http"></data>
+			</intent-filter>
+		</activity>
+    </gap:config-file>
     <!-- Customize your app and platform with the preference element. -->
     <!-- <preference name="phonegap-version"      value="3.4.0" /> -->      <!-- all: current version of PhoneGap -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
@@ -61,9 +83,7 @@
 	<gap:plugin name="org.apache.cordova.battery-status" version="0.2.7" />
 	<gap:plugin name="org.apache.cordova.media-capture" version="0.2.8" />
 	<gap:plugin name="org.apache.cordova.device-motion" version="0.2.6" />
-	<gap:plugin name="nl.x-services.plugins.launchmyapp">
-		<param name="URL_SCHEME" value="pgCamera" />
-	</gap:plugin>
+	<gap:plugin name="com.borismus.webintent" version="0.1.0" />
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
