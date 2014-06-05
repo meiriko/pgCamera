@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.phonegap.pgcamera"
-        version   = "1.0.10">
+        version   = "1.0.11">
 
     <name>pgCamera</name>
 
@@ -37,12 +37,6 @@
             </intent-filter>
 		</activity>
         <activity android:name="IntentTest">
-			<!--
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-			-->
 			<intent-filter>
 				<action android:name="android.intent.action.VIEW"></action>
 				<category android:name="android.intent.category.DEFAULT"></category>
