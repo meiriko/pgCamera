@@ -46,13 +46,28 @@
 				<p class="event listening">accelx</p>
 				<p class="event received">accely</p>
 			</div>
+			<div style="margin-left: 20px; margin-top: 40px;font-size: 48px;" onclick="startIntent()" id="countElement">1</div>
+			<a href="pgcamera://" style="margin-top:30px;padding-top:20px;font-size:32px;">walla</a>
         </div>
-		<div onclick="handleOpenURL('zzz')">click me for pops</div>
+		<!-- <div onclick="handleOpenURL('x')"><h1>click me for pops</h1></div> -->
         <!-- <script type="text/javascript" src="cordova.js"></script> -->
         <script type="text/javascript" src="phonegap.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
         <script type="text/javascript">
             app.initialize();
+			function startIntent(){
+			/*
+				alert('p1');
+				window.plugins.webintent.startActivity({
+					action: WebIntent.ACTION_VIEW,
+					url: 'http://www.walla.co.il',
+					// url: 'geo:0,0?q=' + address,
+				  }, function () {alert('good');}, function () {
+					alert('Failed to open URL via Android Intent');
+				  });
+				  alert('p2');
+			*/
+			}
         </script>
     </body>
 </html>

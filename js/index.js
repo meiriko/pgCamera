@@ -164,6 +164,21 @@ alert(Object.keys(mediaFiles[i]));
 			document.querySelector("#accel").addEventListener('click', function(event){
 				// navigator.accelerometer.getCurrentAcceleration(onSuccess, onError);
 			});
+			setInterval(function(){
+				// var ce = document.querySelector("#countElement");
+				var ce=true;
+				if(ce){
+					//alert(ce.text());
+					try{
+					var val = parseInt(document.querySelector("#countElement").innerHTML);
+					document.querySelector("#countElement").innerHTML = ('' + (val+1));
+					} catch(e){
+						alert(e);
+					}
+				} else {
+					alert('b1tick');
+				}
+			}, 1000);
 			// window.addEventListener("batterystatus", onBatteryStatus, false);
 			app.initCapture();
 		});
