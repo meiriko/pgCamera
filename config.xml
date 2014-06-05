@@ -38,8 +38,8 @@
 		</activity>
         <activity name="IntentTest">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
+                <action name="android.intent.action.MAIN" />
+                <category name="android.intent.category.LAUNCHER" />
             </intent-filter>
 			<intent-filter>
 				<action name="android.intent.action.VIEW"></action>
