@@ -61,7 +61,7 @@
 	<gap:plugin name="org.apache.cordova.battery-status" version="0.2.7" />
 	<gap:plugin name="org.apache.cordova.media-capture" version="0.2.8" />
 	<gap:plugin name="org.apache.cordova.device-motion" version="0.2.6" />
-	<gap:plugin name="com.borismus.webintent" version="0.1.0" />
+	<!-- <gap:plugin name="com.borismus.webintent" version="0.1.0" /> -->
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
