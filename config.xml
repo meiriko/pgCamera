@@ -49,14 +49,13 @@
 				<data host="m.youtube.com" scheme="http"></data>
 			</intent-filter>
 		</activity>
-		-->
 		<activity name="PgCamera">
+		-->
 			<intent-filter>
 				<action name="android.intent.action.VIEW" />
 				<category name="android.intent.category.DEFAULT" />
 				<category name="android.intent.category.BROWSABLE" />
-			<data android:scheme="pgcamera"   android:host="*"/>
-		</activity>
+			<data scheme="pgcamera" host="*"/>
 		</intent-filter>
     </gap:config-file>
     <preference name="permissions"                value="none"/>
