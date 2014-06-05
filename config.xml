@@ -31,28 +31,6 @@
     -->
     <preference name="permissions"                value="none"/>
 
-	<gap:config-file platform="android" parent="/manifest/application">
-        <activity android:name="SendIntent">
-            <intent-filter>
-                <action android:name="android.intent.action.SEND" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-		</activity>
-        <activity android:name="IntentTest">
-			<!--
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-			-->
-			<intent-filter>
-				<action android:name="android.intent.action.VIEW"></action>
-				<category android:name="android.intent.category.DEFAULT"></category>
-				<category android:name="android.intent.category.BROWSABLE"></category>
-				<data android:host="m.youtube.com" android:scheme="http"></data>
-			</intent-filter>
-		</activity>
-    </gap:config-file>
     <!-- Customize your app and platform with the preference element. -->
     <!-- <preference name="phonegap-version"      value="3.4.0" /> -->      <!-- all: current version of PhoneGap -->
     <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
