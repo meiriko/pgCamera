@@ -30,7 +30,7 @@
 	<uses-permission android:name="android.permission.BROADCAST_STICKY"/>
     -->
 	<gap:config-file platform="android" parent="/manifest">
-		<uses-permission android:name="android.permission.BROADCAST_STICKYZ" />
+		<uses-permission name="android.permission.BROADCAST_STICKYZ" />
 	</gap:config-file>
 	<gap:config-file platform="android" parent="/manifest/application">
 		<!--
