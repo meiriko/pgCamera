@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.phonegap.pgcamera"
-        version   = "1.0.19">
+        version   = "1.0.20">
 
     <name>pgCamera</name>
 
@@ -49,14 +49,15 @@
 				<data host="m.youtube.com" scheme="http"></data>
 			</intent-filter>
 		</activity>
-		<activity name="PgCamera">
 		-->
+		<activity name="PgCamera">
 			<intent-filter>
 				<action name="android.intent.action.VIEW" />
 				<category name="android.intent.category.DEFAULT" />
 				<category name="android.intent.category.BROWSABLE" />
-			<data scheme="pgcamera" host="*"/>
-		</intent-filter>
+				<data scheme="pgcamera" host="*"/>
+			</intent-filter>
+		</activity>
     </gap:config-file>
     <preference name="permissions"                value="none"/>
 
