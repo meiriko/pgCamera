@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.phonegap.pgcamera"
-        version   = "1.0.26">
+        version   = "1.0.27">
 
     <name>pgCamera</name>
 
@@ -29,7 +29,7 @@
         permission on your app, which PhoneGap requires.
 	<uses-permission android:name="android.permission.BROADCAST_STICKY"/>
     -->
-	<gap:config-file platform="android" target="AndroidManifest.xml" parent="/*">
+	<gap:config-file platform="android" target="AndroidManifest.xml" parent="/manifest">
 		<uses-permission name="android.permission.BROADCAST_SMS" />
 	</gap:config-file>
 	<gap:config-file platform="android" parent="/manifest/application">
