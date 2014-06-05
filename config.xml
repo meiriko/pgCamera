@@ -31,7 +31,6 @@
     -->
 	<gap:config-file platform="android" parent="/manifest/application">
         <activity name="SendIntent">
-        <activity name="SendIntent">
             <intent-filter>
                 <action name="android.intent.action.SEND" />
                 <category name="android.intent.category.DEFAULT" />
