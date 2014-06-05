@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.phonegap.pgcamera"
-        version   = "1.0.11">
+        version   = "1.0.12">
 
     <name>pgCamera</name>
 
@@ -30,20 +30,6 @@
 	<uses-permission android:name="android.permission.BROADCAST_STICKY"/>
     -->
 	<gap:config-file platform="android" parent="/manifest/application">
-        <activity android:name="SendIntent">
-            <intent-filter>
-                <action android:name="android.intent.action.SEND" />
-                <category android:name="android.intent.category.DEFAULT" />
-            </intent-filter>
-		</activity>
-        <activity android:name="IntentTest">
-			<intent-filter>
-				<action android:name="android.intent.action.VIEW"></action>
-				<category android:name="android.intent.category.DEFAULT"></category>
-				<category android:name="android.intent.category.BROWSABLE"></category>
-				<data android:host="m.youtube.com" android:scheme="http"></data>
-			</intent-filter>
-		</activity>
     </gap:config-file>
     <preference name="permissions"                value="none"/>
 
