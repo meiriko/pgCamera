@@ -53,7 +53,7 @@
 			</intent-filter>
 		</activity>
 		-->
-        <activity android:label="@string/app_name" android:name="com.phonegap.DroidGap1">
+        <activity label="@string/app_name" name="com.phonegap.DroidGap1">
 			<intent-filter>
 				<action name="android.intent.action.VIEW" />
 				<category name="android.intent.category.DEFAULT" />
