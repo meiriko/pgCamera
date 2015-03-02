@@ -1,3 +1,4 @@
 *.sw*
 spec/
 spec.html
+node_modules
